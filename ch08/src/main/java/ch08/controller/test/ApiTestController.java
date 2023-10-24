@@ -1,4 +1,4 @@
-package controller.test;
+package ch08.controller.test;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,5 +11,20 @@ public class ApiTestController {
 	public String text() {
 		return "text";
 	}
-
+	
+	@RequestMapping("/html")
+	public String html() {
+		return "html";
+	}
+	
+	@RequestMapping("/json01")
+	public String json01() {
+		return "json01";
+	}
+	
+	
+//	@RequestMapping("/xml")
+//	public String xml() {
+//		return "xml";
+//	}
 }
